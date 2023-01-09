@@ -1,0 +1,11 @@
+""" Implement a function that takes a string consisting of words seperated by single spaces and returns a string containing all those words but in the reverse order 
+    and such that all cases of letters in the original string are swapped"""
+    
+    ---------------------------------------------------------------------------------------------------------------------------------------------------
+    
+    def reverse_words_order_and_swap_cases(sentence):
+       str = sentence.split()[::-1]
+       revStr = []
+       for i in str:
+           revStr.append(i)
+       return " ".join(revStr).swapcase()
